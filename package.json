@@ -1,0 +1,16 @@
+{
+  "name": "nexaa-mini-server",
+  "version": "1.0.0",
+  "description": "Servidor leve e simbólico do Nexaa Mini",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Fábio & Sahra 💖",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dgram": "^1.0.1",
+    "express": "^4.18.2"
+  }
+}
