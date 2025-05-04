@@ -1,7 +1,7 @@
 {
-  "name": "nexaa-mini-server",
+  "name": "nexaa-server",
   "version": "1.0.0",
-  "description": "Servidor leve e simbólico do Nexaa Mini",
+  "description": "Servidor oficial do Nexaa",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
