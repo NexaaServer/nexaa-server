@@ -11,7 +11,7 @@ const dgram = require('dgram');
 
 const app = express();
 const http = require('http').createServer(app);
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(express.json());
@@ -109,6 +109,11 @@ function iniciarBroadcastUDP() {
 udpServer.bind(50000, () => {
     udpServer.setBroadcast(true);
     iniciarBroadcastUDP();
+});
+
+// 🔁 Verificar conexão
+app.get('/verificarConexao', (req, res) => {
+    res.json({ status: 'online', servidor: 'Nexaa Server ativo', hora: new Date().toISOString() });
 });
 
 // 🛰️ Iniciar servidor
